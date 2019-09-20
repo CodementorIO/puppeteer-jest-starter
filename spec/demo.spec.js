@@ -17,7 +17,7 @@ describe('Demo', () => {
   xit('fails with proper error message', async ()=> {
     const driver = createPageDriver(page)
     await driver.goToPage()
-    await driver.clickNonExistingSignupButton()
+    await driver.doPayment()
   })
 })
 
@@ -26,8 +26,11 @@ function createPageDriver (page) {
     goToPage() {
       return page.goto('https://google.com')
     },
-    clickNonExistingSignupButton() {
-      return page.click('.non-existing-signup-btn')
+    async doPayment() {
+      await page.click('.my-first-css-selector')
+      await page.click('.my-another-css-selector')
+      await page.click('.my-yet-another-css-selector')
+      await page.click('.this-drove-me-crazy')
     }
-  }, 'GooglePage')
+  }, 'MyDemoPage')
 }

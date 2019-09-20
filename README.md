@@ -102,6 +102,8 @@ it('is nasty', async () => {
 })
 ```
 
+![](/readme-assest/unreadable-message.png)
+
 **after**
 
 ```javascript
@@ -116,7 +118,7 @@ function createPageDriver (page) {
       await page.click('.my-yet-another-css-selector')
       await page.click('.this-drove-me-crazy')
     },
-  }, 'MyPaymentPage')
+  }, 'MyDemoPage')
 }
 
 it('is much better', async () => {
@@ -125,5 +127,7 @@ it('is much better', async () => {
   await page.doPayment()
 })
 ```
+
+![](/readme-assest/proper-message.png)
 
 By adding a layer between business logic and UI details, we can abstract out the UI implementation detail there.
