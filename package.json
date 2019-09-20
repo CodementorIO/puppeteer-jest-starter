@@ -1,8 +1,5 @@
 {
   "scripts": {
-    "lint": "bro \"lib/**/*.js\" \"spec/**/*.js\" --verbose | snazzy",
-    "lint:fix": "bro \"lib/**/*.js\" \"spec/**/*.js\" --fix --verbose | snazzy",
-    "lint-staged": "lint-staged",
     "start": "jest --runInBand spec/",
     "start:headed": "HEADED=1 jest --runInBand spec/"
   },
