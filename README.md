@@ -1,5 +1,5 @@
 ## Puppeteer-Jest Starter
--------
+
 
 A starter-kit quipped with the minimal requirements for [Puppeteer](https://github.com/GoogleChrome/puppeteer) + [Jest](https://jestjs.io/), making E2E testing a breeze.
 
@@ -88,7 +88,7 @@ The default options/overwritten methods can be modified in `lib/pageWrapper`.
 ### Make it easy to decouple test case with UI detail
 
 In e2e testing, it's easy to scatter css selectors all around the code base. This makes maintainance when UI changes a nightmare.
-Here we use UI `driver` layer to mitigate this issue and make the error message more readable at the same time:
+Here we use [`window driver`](https://martinfowler.com/bliki/PageObject.html) layer to mitigate this issue and make the error message more readable at the same time:
 
 **before**
 
