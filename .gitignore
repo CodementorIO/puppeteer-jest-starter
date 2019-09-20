@@ -1,0 +1,8 @@
+node_modules
+cypress/integration/examples
+.DS_Store
+cypress/videos
+.env
+screenshots/*
+failedDetails/*
+!screenshots/.gitkeep

@@ -1,0 +1,48 @@
+version: 2.1
+
+jobs:
+  test:
+    docker:
+      - image: codementordev/puppeteer:latest
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+
+      # Download and cache dependencies
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "package-lock.json" }}
+          - v1-dependencies-
+
+      - run: npm install
+
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ .Branch }}-{{ checksum "package-lock.json" }}
+
+      - run: npm start
+      - store_artifacts:
+          path: /tmp/screenshots
+      - store_artifacts:
+          path: /tmp/failedDetails
+
+
+workflows:
+  version: 2
+  commit:
+    jobs:
+      - test
+
+  nightly:
+    triggers:
+      - schedule:
+          cron: "0 1,10 * * *"
+          filters:
+            branches:
+              only:
+                - master
+    jobs:
+      - test

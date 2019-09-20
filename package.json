@@ -1,0 +1,26 @@
+{
+  "scripts": {
+    "lint": "bro \"lib/**/*.js\" \"spec/**/*.js\" --verbose | snazzy",
+    "lint:fix": "bro \"lib/**/*.js\" \"spec/**/*.js\" --fix --verbose | snazzy",
+    "lint-staged": "lint-staged",
+    "start": "jest --runInBand spec/",
+    "start:headed": "HEADED=1 jest --runInBand spec/"
+  },
+  "dependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "babel-jest": "^24.9.0",
+    "jest": "^24.5.0",
+    "mkdirp": "^0.5.1",
+    "puppeteer": "^1.13.0"
+  },
+  "jest": {
+    "modulePaths": [
+      "."
+    ],
+    "testEnvironment": "node",
+    "setupFilesAfterEnv": [
+      "<rootDir>/spec/setup.js"
+    ]
+  }
+}

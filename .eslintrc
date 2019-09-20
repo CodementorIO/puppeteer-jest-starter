@@ -1,0 +1,37 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "standard",
+    "standard-react",
+    "standard-jsx",
+    "prettier",
+    "prettier/react",
+    "prettier/standard"
+  ],
+  "plugins": [
+    "standard",
+    "react",
+    "prettier"
+  ],
+  "env": {
+    "jest": true
+  },
+  "rules": {
+    "prefer-const": ["error", {
+      "destructuring": "all"
+    }],
+    "quote-props": ["error", "as-needed"],
+    "eol-last": "off",
+    "comma-dangle": "off",
+    "prettier/prettier": [
+      "error", {
+        "semi": false,
+        "printWidth": 90,
+        "arrowParens": "always",
+        "jsxBracketSameLine": true,
+        "jsxSingleQuote": true,
+        "singleQuote": true
+      }
+    ]
+  }
+}
