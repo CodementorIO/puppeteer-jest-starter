@@ -21,7 +21,7 @@ A starter-kit quipped with the minimal requirements for [Puppeteer](https://gith
 
 ### `global.page`
 
-- provide wrapped `[global.page](https://pptr.dev/#?product=Puppeteer&version=v1.20.0&show=api-class-page)` instance so that you can start writting your test case immediately.
+- provide wrapped [`global.page`](https://pptr.dev/#?product=Puppeteer&version=v1.20.0&show=api-class-page) instance so that you can start writting your test case immediately.
 
 ### Screenshot for each failed test case
 
