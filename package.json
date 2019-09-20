@@ -4,9 +4,6 @@
     "start:headed": "HEADED=1 jest --runInBand spec/"
   },
   "dependencies": {
-    "@babel/core": "^7.6.0",
-    "@babel/preset-env": "^7.6.0",
-    "babel-jest": "^24.9.0",
     "jest": "^24.5.0",
     "mkdirp": "^0.5.1",
     "puppeteer": "^1.13.0"
