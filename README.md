@@ -1,5 +1,6 @@
 ## Puppeteer-Jest Starter
 
+[![CircleCI](https://circleci.com/gh/CodementorIO/puppeteer-jest-starter.svg?style=svg)](https://circleci.com/gh/CodementorIO/puppeteer-jest-starter)
 
 A starter-kit quipped with the minimal requirements for [Puppeteer](https://github.com/GoogleChrome/puppeteer) + [Jest](https://jestjs.io/), making E2E testing a breeze.
 
@@ -131,3 +132,7 @@ it('is much better', async () => {
 ![](/readme-assest/proper-message.png)
 
 By adding a layer between business logic and UI details, we can abstract out the UI implementation detail there.
+
+### CI setup
+
+CircleCI config is included!
