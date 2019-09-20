@@ -1,7 +1,7 @@
 ## Puppeteer-Jest Starter
 -------
 
-A starter-kit quipped with the minimal requirements for Puppeteer + Jest.
+A starter-kit quipped with the minimal requirements for Puppeteer + Jest, making E2E testing a breeze.
 
 ## Kicking off:
 
