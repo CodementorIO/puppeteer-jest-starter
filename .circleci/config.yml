@@ -21,7 +21,7 @@ jobs:
       - save_cache:
           paths:
             - node_modules
-          key: v1-dependencies-{{ .Branch }}-{{ checksum "package-lock.json" }}
+          key: v1-dependencies-{{ checksum "package-lock.json" }}
 
       - run: npm start
       - store_artifacts:
